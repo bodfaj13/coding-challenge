@@ -1,0 +1,19 @@
+@import '../../mixins.scss';
+.main {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  @include tablet() {
+    width: 70%;
+  }
+  @include mobile() {
+    width: unset;
+    padding: 0 0.5rem;
+  }
+  .title {
+   display: flex;
+   justify-content: center;
+  }
+}
