@@ -1,31 +1,15 @@
-import React, { Component } from 'react'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-// import './App.scss'
+import React from 'react'
+import Header from './components/header/header'
+import Main from './components/main/main'
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      newInput: null
-    }
-  }
+const App = (props) => {
 
-  addInputs = (inputs) => {
-    this.setState({
-      newInput: inputs
-    })
-  }
-
-  render() {
-    const { newInput } = this.state
-    return (
-      <div className="App">
-        <Header addInputs={this.addInputs} />
-        <Main newInput={newInput}/>
-      </div>
-    )
-  }
+  return (
+    <div className="App">
+      <Header/>
+      <Main/>
+    </div>
+  )
 }
 
 export default App
